@@ -22,6 +22,7 @@
   line-height: 48rpx;
 
 }
+
 .mt9 {
   margin-top: 9rpx;
 }
@@ -31,13 +32,13 @@
   position: relative;
 }
 
-.b-input { 
+.b-input {
   position: relative;
   height: 26rpx;
 
 }
 
-.b-input-left { 
+.b-input-left {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -61,18 +62,22 @@
   line-height: 1rpx;
   color: #5F5E5A;
   display: inline-block;
-  vertical-align: middle; 
-  padding-left: 55rpx; 
+  vertical-align: middle;
+  padding-left: 55rpx;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .confirm {
-
-  margin-top: 70rpx !important; 
+  margin-top: 70rpx !important;
   width: 695rpx;
   background: #99cc33 !important;
+  height: 75rpx !important;
+  line-height: 75rpx !important;
+  font-size: 34rpx !important;
+  border-radius: 10rpx !important;
+
 
 }
 

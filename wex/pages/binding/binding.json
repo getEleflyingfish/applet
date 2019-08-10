@@ -5,6 +5,8 @@
     "i-checkbox": "/components/checkbox/index",
     "i-checkbox-group": "/components/checkbox-group/index"
 
+
+
   },
   "navigationBarTitleText": "绑定微信号"
 }

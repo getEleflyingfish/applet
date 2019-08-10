@@ -11,12 +11,20 @@
 
 
       <view class="b-input-left fl">
-        <view class="group">
+        <view class="group" bindtap="reform">
           <!-- reformIpnut -->
-          <block wx:for="{{iconColor}}">
-            <icon type="success" bindtap="reformIpnut" class="i-cons" size="20" color="{{item}}" />
+          <block attr="wx:key">
+            <icon id="i-cons" type="{{type}}"   class="i-cons" size="20" color="{{iconColor}}" />
           </block>
         </view>
+      </view>
+
+      <!-- selectable-group.wxml -->
+      <view attr="wx:key">
+        <label>
+          <selectable disabled="{{false}}"></selectable>
+          {{item}}
+        </label>
       </view>
 
       <text class="b-input-right fl" selectable="false" space="false" decode="false">
@@ -28,7 +36,4 @@
 
   <i-button bind:click="handleClick" i-class="confirm" type="primary" long="true">确认</i-button>
 
-  <navigator class="" target="" url="/pages/index/index" hover-class="navigator-hover" open-type="navigate">
-    跳转index
-  </navigator>
 </view>

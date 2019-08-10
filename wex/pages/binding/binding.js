@@ -5,11 +5,13 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
+    type: "",
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     iconSize: [20, 30, 40, 50, 60, 70],
-    iconColor: ['#ff9900']
+    iconColor: ['#ff9900'],
+    onOff: true
 
   },
   //事件处理函数
@@ -35,6 +37,7 @@ Page({
       }
     } else {
       // 在没有 open-type=getUserInfo 版本的兼容处理
+
       wx.getUserInfo({
         success: res => {
           app.globalData.userInfo = res.userInfo
@@ -54,8 +57,27 @@ Page({
       hasUserInfo: true
     })
   },
-  reformIpnut: function (e) {
-    console.log(e)
+  reform: function () {
+
+
+    if (this.onOff) {
+      this.setData({
+        type: 'success'
+      })
+      this.onOff = false;
+      console.log("11111")
+    } else {
+      this.setData({
+        type: ''
+
+      })
+      this.onOff = true;
+      console.log("2222")
+    }
+
+
+
+
   }
 
 

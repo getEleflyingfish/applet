@@ -24,7 +24,8 @@
                     <text class=""> 序号：12346 </text>
                     <text class=""> 供货单编号：13484149765</text>
                     <text class=""> 供货单编号：{{ }} </text>
-                    <view class="affirm down"> 下载供货单</view>
+                    <view class="affirm down" bindtap="tapDownload" left="{{left}}"> 下载供货单</view>
+
                     <view class="affirm"> 知道了</view>
                     <view class="icon-img">
                         <image class="" src="../images/icon-r_35.png" mode="aspectFit" lazy-load="false" binderror=""
@@ -72,14 +73,14 @@
 
     <view class="masked">
         <view class="maskeding">
-                <view class="title-tips">
-                        提示消息
-                        <image class="cancel_05" src="../images/cancel_05.png"  > </image>
-                </view> 
-                      
-                <text class="mask-text" >
-                    供货单已保存到本地相册
-                </text>      
+            <view class="title-tips">
+                提示消息
+                <image class="cancel_05" src="../images/cancel_05.png"> </image>
+            </view>
+
+            <text class="mask-text">
+                供货单已保存到本地相册
+            </text>
         </view>
     </view>
 </view>
