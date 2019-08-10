@@ -1,0 +1,153 @@
+.tab-wap {
+    width: 750rpx;
+    background: #ececec;
+}
+
+.tab-btnwap {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background: #fff;
+}
+
+.tab-btnwap .tab-btn {
+    text-align: center;
+    height: 95rpx;
+    color: #323232;
+    font-size: 31rpx;
+    display: flex;
+    align-items: center;
+    /*垂直居中*/
+    justify-content: center;
+    /*水平居中*/
+
+}
+
+.tab-btnwap .active {
+    background: #99cc33;
+    color: #fff;
+}
+
+.tab-btn {
+    width: 50%;
+}
+
+.tab-wap .hidden {
+    display: none;
+}
+
+.tab-wap .show {
+    display: block;
+}
+
+
+.remind-item {
+    background: #fff;
+    margin-top: 20rpx;
+    padding: 18rpx 28rpx 20rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tab-text-change text {
+    display: block;
+    color: #666666;
+    font-size: 28rpx;
+    line-height: 60rpx;
+}
+
+.affirm {
+    position: absolute;
+    right: 28rpx;
+    top: 35rpx;
+    width: 110rpx;
+    height: 48rpx;
+    line-height: 48rpx;
+    background: #ececec;
+    border-radius: 15rpx;
+    font-size: 26rpx;
+    text-align: center;
+    color: #b7b7b7;
+}
+
+.icon-img {
+    width: 24rpx;
+    height: 32rpx;
+    position: absolute;
+    right: 28rpx;
+    bottom: 50rpx;
+}
+
+.icon-img image {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden-remind {
+    background: #f7f7f7;
+}
+
+.title {
+    display: flex;
+    /*   justify-conten: space-between; */
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 65rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+}
+
+.title .title-item {
+    font-size: 24rpx;
+    color: #171717;
+    width: 100%;
+    -webkit-flex: 3;
+    flex: 3;
+    font-weight: bold;
+}
+
+.title .special1,
+.title .special2 {
+    -webkit-flex: 5;
+    flex: 5;
+}
+
+
+.hid-text .hid-item {}
+
+.hid-text {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 65rpx;
+    border-top: 1px solid #d3d3d3;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+}
+
+.hid-text .hid-item {
+    font-size: 24rpx;
+    color: #505050;
+    width: 100%;
+    -webkit-flex: 3;
+    flex: 3;
+}
+
+.hid-text .special1,
+.hid-text .special2 {
+    -webkit-flex: 5;
+    flex: 5;
+}
+
+.tab-text-change .on { 
+    background: #99cc33;
+    color: #fff;
+}
+.tab-text-change .on text { 
+    color: #fff;
+} 
+.tab-text-change .on .affirm { 
+    background: #ff9700;
+    color: #fff;
+}

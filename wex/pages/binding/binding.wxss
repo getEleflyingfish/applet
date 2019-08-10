@@ -1,0 +1,83 @@
+/**index.wxss**/
+.sign-img {
+  width: 450rpx;
+}
+
+.sign-img image {
+  width: 100%;
+  height: 151rpx;
+}
+
+.mt94 {
+  margin-top: 94rpx;
+}
+
+.bound {
+  text-align: center;
+}
+
+.bound .b-text {
+  font-size: 30rpx;
+  color: #494846;
+  line-height: 48rpx;
+
+}
+.mt9 {
+  margin-top: 9rpx;
+}
+
+.radio-typ {
+  display: inline-block;
+  position: relative;
+}
+
+.b-input { 
+  position: relative;
+  height: 26rpx;
+
+}
+
+.b-input-left { 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.b-input .group {
+  width: 26rpx;
+  height: 26rpx;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+
+
+.b-input text {
+  font-size: 22rpx;
+  height: 100%;
+  line-height: 1rpx;
+  color: #5F5E5A;
+  display: inline-block;
+  vertical-align: middle; 
+  padding-left: 55rpx; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm {
+
+  margin-top: 70rpx !important; 
+  width: 695rpx;
+  background: #99cc33 !important;
+
+}
+
+
+
+.container .border-lit {
+  border-top: 1px solid #cccccc;
+}

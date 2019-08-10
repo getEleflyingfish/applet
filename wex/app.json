@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/binding/binding",
+    "pages/index/index",
+   
+    "pages/balance/balance",
+    "pages/supply/supply",
+    "pages/remind/remind",
+    "pages/person/person",
+    "pages/logs/logs"
+
+
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

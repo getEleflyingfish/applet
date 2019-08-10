@@ -1,0 +1,113 @@
+<view class="container person-sky">
+    <view class=" nav-sky clearfix">
+        <view class="sky-left fl">
+            <view class="img1-box">
+                <image class="img1" src="../images/logo_03.png"> </image>
+            </view>
+            <view class="img2-box">
+                <image class="img2" src="../images/logtext_03.png"> </image>
+            </view>
+        </view>
+        <view class="sky-right fr">
+
+            <view class="sky-text">
+                <image class="sky-img" src="../images/tel_03.png"> </image>
+                0575-85097878
+            </view>
+        </view>
+    </view>
+
+    <!--  日期区间 搜索-->
+    <view class="seek w750 clearfix" hover-class="none" hover-stop-propagation="false">
+        <view class="section fl">
+            <view class="section__title"></view>
+            <picker mode="date" value="{{date}}" start="2019-07-11" bindchange="bindDateChange">
+                <view class="picker">
+                    {{date}}
+                </view>
+                <image class="calendar" src="../images/calendar_03.png"> </image>
+            </picker>
+        </view>
+        <view class="section fl">
+            <view class="section__title"></view>
+            <picker mode="date" value="{{date}}" end="2019-07-15" bindchange="bindDateChange">
+                <view class="picker">
+                    {{date}}
+                </view>
+                <image class="calendar" src="../images/calendar_03.png"> </image>
+            </picker>
+        </view>
+        <view class="seek-right fr">
+            <i-button i-class="seek-text" bind:click="handleClick" type="primary">搜索</i-button>
+        </view>
+    </view>
+    <!--  -->
+    <view class="bolting w750">
+        <view class="bolting-item"> 全部(200)</view>
+        <view class="bolting-item"> 已结算(100) </view>
+        <view class="bolting-item"> 未结算(100)</view>
+    </view>
+    <view class="tab-text-change w750">
+        <view class="remind-item on">
+            <text class=""> 序号：12346 </text>
+            <text class=""> 供货单编号：13484149765</text>
+            <text class=""> 总金额：{{ }} </text>
+            <text class=""> 供货日期：{{ }} </text>
+            <!--             <view class="affirm down"> 下载供货单</view> -->
+            <view class="affirm"> 申请结算</view>
+            <view class="icon-img">
+                <image class="" src="../images/icon-r_35.png" mode="aspectFit" lazy-load="false" binderror=""
+                    bindload=""> </image>
+            </view>
+        </view>
+        <view class="hidden-remind">
+            <view class="title clearfix">
+                <view class="title-item fl"> 条目 </view>
+                <view class="title-item fl"> 分类 </view>
+                <view class="title-item fl"> 商品名</view>
+                <view class="title-item fl"> 规格 </view>
+                <view class="title-item fl"> 单位 </view>
+                <view class="title-item special1 fl"> 实际数量 </view>
+                <view class="title-item fl"> 单价 </view>
+                <view class="title-item fl"> 小计 </view>
+
+            </view>
+            <view class="hid-text clearfix">
+                <view class="hid-item fl"> 1 </view>
+                <view class="hid-item fl"> 蔬菜 </view>
+                <view class="hid-item fl"> 土豆</view>
+                <view class="hid-item fl"> 散装 </view>
+                <view class="hid-item fl"> 斤 </view>
+                <view class="hid-item special1 fl"> 50 </view>
+                <view class="hid-item fl"> 2.00 </view>
+                <view class="hid-item fl"> 400 </view>
+            </view>
+            <view class="hid-text clearfix">
+                <view class="hid-item fl"> 2 </view>
+                <view class="hid-item fl"> 蔬菜 </view>
+                <view class="hid-item fl"> 土豆</view>
+                <view class="hid-item fl"> 散装 </view>
+                <view class="hid-item fl"> 斤 </view>
+                <view class="hid-item special1 fl"> 50 </view>
+                <view class="hid-item fl"> 2.00 </view>
+                <view class="hid-item fl"> 400 </view>
+            </view>
+
+        </view>
+        <view class="remind-item ">
+            <text class=""> 序号：12346 </text>
+            <text class=""> 供货单编号：13484149765</text>
+            <text class=""> 总金额：{{ }} </text>
+            <text class=""> 供货日期：{{ }} </text>
+            <!--             <view class="affirm down"> 下载供货单</view> -->
+            <view class="affirm"> 已结算</view>
+            <view class="icon-img">
+                <image class="" src="../images/icon-r_35.png" mode="aspectFit" lazy-load="false" binderror=""
+                    bindload=""> </image>
+            </view>
+        </view>
+    </view>
+
+
+
+</view>

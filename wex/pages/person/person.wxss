@@ -1,0 +1,86 @@
+/**person.wxss**/
+
+
+
+.personal {
+    border-top: 1px solid #cccccc;
+    box-shadow: 0 0 10rpx -1rpx #cccccc;
+    width: 750rpx;
+    padding: 51rpx 28rpx;
+    box-sizing: border-box;
+}
+
+.sonal-left {
+    width: 116rpx;
+    height: 116rpx;
+    border-radius: 25rpx;
+    margin-right: 34rpx;
+}
+
+.sonal-left image {
+    width: 116rpx;
+    height: 116rpx;
+    vertical-align: top;
+}
+
+.sonal-right {
+    height: 116rpx;
+    width: calc(100% - 116rpx - 34rpx);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.sonal-right text {
+    width: 100%;
+    display: block;
+
+}
+
+.sonal-right .title {
+    font-size: 33rpx;
+    font-weight: bold;
+}
+
+.sonal-right .info {
+    font-size: 30rpx;
+    color: #7d7d7d;
+}
+
+.personal-form {
+
+    width: 750rpx;
+    padding: 51rpx 28rpx;
+    box-sizing: border-box;
+    padding-top: 131rpx;
+
+}
+
+.sonalf-item {
+    margin-bottom: 56rpx;
+}
+
+.personal-form button {
+
+    height: 100rpx;
+    color: #fff;
+    background: #99cc33;
+}
+.personal-form .button-hover{
+    background: #89bd21;
+}
+button.disabl[type=primary] { 
+    background: #99cc33;
+}
+button.disabl[disabled] { 
+    background: #cccccc;
+}
+
+
+
+
+.personal-form .disabl {
+    background: #cccccc;
+}

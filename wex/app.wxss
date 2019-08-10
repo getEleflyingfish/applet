@@ -1,0 +1,122 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+/* 
+common
+*/
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.w750 { 
+  width: 750rpx;
+}
+
+
+/* 
+common
+*/
+
+/* common top s*/
+
+.nav-sky {
+  width: 750rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #99cc33;
+  overflow: hidden;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.person-sky {
+  padding: 0;
+}
+
+
+.sky-left {
+  width: 400rpx;
+
+}
+
+.sky-left .img1-box {
+  width: 175rpx;
+  height: 100rpx;
+  float: left;
+  margin-right: 20rpx;
+  position: relative;
+}
+
+.sky-left .img1 {
+  width: 175rpx;
+  height: 62rpx;
+  vertical-align: middle;
+}
+
+.sky-left .img1-box::after {
+  content: "";
+  width: 0rpx;
+  height: 56rpx;
+  position: absolute;
+  border-right: 1rpx solid #e8f4d0;
+  right: -10rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sky-left .img2-box {
+  width: 196rpx;
+  height: 100rpx;
+  float: left;
+}
+
+.sky-left .img2 {
+  width: 196rpx;
+  height: 44rpx;
+  vertical-align: middle;
+}
+
+
+.sky-right {
+  width: 240rpx;
+  text-align: right;
+  color: #fff;
+  font-size: 20rpx;
+}
+
+.sky-text {
+
+  vertical-align: middle;
+}
+
+.sky-text .sky-img {
+  width: 31rpx;
+  height: 28rpx;
+  vertical-align: middle;
+  margin-top: -4rpx;
+}
+
+.index-module .i-cell-desc { 
+  color: #fff;
+}
+/* common top e*/

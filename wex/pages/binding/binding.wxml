@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container border-lit">
+
+  <view class='sign-img'>
+    <image src='../images/logo_07.png'></image>
+  </view>
+
+  <view class='mt94 bound '>
+    <text class='b-text'> 登录后该应用将获得以下权限</text>
+    <view class='mt9 b-input clearfix'>
+
+
+      <view class="b-input-left fl">
+        <view class="group">
+          <!-- reformIpnut -->
+          <block wx:for="{{iconColor}}">
+            <icon type="success" bindtap="reformIpnut" class="i-cons" size="20" color="{{item}}" />
+          </block>
+        </view>
+      </view>
+
+      <text class="b-input-right fl" selectable="false" space="false" decode="false">
+        获得你的公开信息(眼称,头像等)
+      </text>
+    </view>
+
+  </view>
+
+  <i-button bind:click="handleClick" i-class="confirm" type="primary" long="true">确认</i-button>
+
+  <navigator class="" target="" url="/pages/index/index" hover-class="navigator-hover" open-type="navigate">
+    跳转index
+  </navigator>
+</view>

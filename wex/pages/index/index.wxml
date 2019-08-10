@@ -1,0 +1,114 @@
+<view class="container person-sky">
+    <view class=" nav-sky clearfix">
+        <view class="sky-left fl">
+            <view class="img1-box">
+                <image class="img1" src="../images/logo_03.png"> </image>
+            </view>
+            <view class="img2-box">
+                <image class="img2" src="../images/logtext_03.png"> </image>
+            </view>
+        </view>
+        <view class="sky-right fr">
+
+            <view class="sky-text">
+                <image class="sky-img" src="../images/tel_03.png"> </image>
+                0575-85097878
+            </view>
+        </view>
+    </view>
+    <!-- 背景图 -->
+    <view class="index-bgimg">
+        <image class="" src="../images/index-img_02.jpg"> </image>
+    </view>
+    <view class="index-main w750">
+        <view class="module-wap ">
+
+            <i-cell-group>
+                <i-cell i-class="index-module" color="#fff" title="提醒" is-link url="/pages/remind/remind">
+                    <view class="icon-wap" hover-class="none" hover-stop-propagation="false">
+                        <i-icon type="remind" size="22" color="#99cc33" />
+                    </view>
+                </i-cell>
+                <view class="mt37 bill-wap clearfix">
+                    <navigator class="bill fl" target="" url="/pages/remind/remind" hover-class="navigator-hover"
+                        open-type="navigate">
+                        预单提醒
+                    </navigator>
+                    <navigator class="bill fl" target="" url="/pages/remind/remind" hover-class="navigator-hover"
+                        open-type="navigate">
+                        变单提醒
+                    </navigator>
+
+                </view>
+
+            </i-cell-group>
+
+            <i-cell-group>
+
+                <i-cell i-class="index-module" color="#fff" title="供货" is-link url="/pages/supply/supply">
+                    <view class="icon-wap" hover-class="none" hover-stop-propagation="false">
+                        <i-icon type="integral" size="22" color="#99cc33" />
+                    </view>
+                </i-cell>
+                <view class="mt37 label-text bill-wap">
+                    <view class="text  ">
+                        供货单：2019-07-25
+                    </view>
+                    <view class="text  ">
+                        供货单：2019-07-24
+                    </view>
+                </view>
+
+            </i-cell-group>
+            <i-cell-group>
+
+                <i-cell i-class="index-module" color="#fff" label="" title="我的" is-link
+                    url="/pages/binding/binding">
+                    <view class="icon-wap" hover-class="none" hover-stop-propagation="false">
+                        <i-icon type="mine" size="22" color="#99cc33" />
+                    </view>
+                </i-cell>
+                <view class="mt37 label-text bill-wap ">
+                    <view class="text">
+                        随绑定微信号/欢迎你
+                    </view>
+                </view>
+            </i-cell-group>
+            <i-cell-group>
+
+                <i-cell i-class="index-module" title="结算" is-link url="/pages/balance/balance">
+                    <view class="icon-wap" hover-class="none" hover-stop-propagation="false">
+                        <i-icon type="financial_fill" size="22" color="#99cc33" />
+                    </view>
+                </i-cell>
+
+                <view class="mt37 label-text bill-wap ">
+                    <view class="text">
+                        供货单：2019-07-25
+                    </view>
+                    <view class="text">
+                        供货单：2019-07-24
+                    </view>
+                </view>
+            </i-cell-group>
+
+        </view>
+
+
+
+        <!--  title="跳转到首页" is-link url="/pages/index/index" -->
+    </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

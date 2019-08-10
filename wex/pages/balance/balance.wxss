@@ -1,0 +1,207 @@
+/* ======================= */
+.remind-item {
+    background: #fff;
+    margin-top: 20rpx;
+    padding: 18rpx 28rpx 20rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tab-text-change {
+    background: #ececec;
+}
+
+.tab-text-change text {
+    display: block;
+    color: #666666;
+    font-size: 28rpx;
+    line-height: 60rpx;
+}
+
+.affirm {
+    position: absolute;
+    right: 28rpx;
+    top: 35rpx;
+    width: 110rpx;
+    height: 48rpx;
+    line-height: 48rpx;
+    background: #ececec;
+    border-radius: 15rpx;
+    font-size: 26rpx;
+    text-align: center;
+    color: #b7b7b7;
+}
+
+.icon-img {
+    width: 24rpx;
+    height: 32rpx;
+    position: absolute;
+    right: 28rpx;
+    bottom: 50rpx;
+}
+
+.icon-img image {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden-remind {
+    background: #f7f7f7;
+}
+
+.title {
+    display: flex;
+    /*   justify-conten: space-between; */
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 65rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+}
+
+.title .title-item {
+    font-size: 24rpx;
+    color: #171717;
+    width: 100%;
+    -webkit-flex: 3;
+    flex: 3;
+    font-weight: bold;
+}
+
+.title .special1,
+.title .special2 {
+    -webkit-flex: 5;
+    flex: 5;
+}
+
+
+.hid-text .hid-item {}
+
+.hid-text {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 65rpx;
+    border-top: 1px solid #d3d3d3;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+}
+
+.hid-text .hid-item {
+    font-size: 24rpx;
+    color: #505050;
+    width: 100%;
+    -webkit-flex: 3;
+    flex: 3;
+}
+
+.hid-text .special1,
+.hid-text .special2 {
+    -webkit-flex: 5;
+    flex: 5;
+}
+
+.tab-text-change .on {
+    background: #99cc33;
+    color: #fff;
+}
+
+.tab-text-change .on text {
+    color: #fff;
+}
+
+.tab-text-change .on .affirm {
+    background: #ff9700;
+    color: #fff;
+}
+
+.tab-text-change .down {
+    right: 150rpx;
+    width: auto;
+    widows: 163rpx;
+    padding: 0 12rpx;
+    box-sizing: border-box;
+}
+
+/* ======================= */
+
+.seek {
+    border-top: 1rpx solid #cccccc;
+    padding: 0 28rpx;
+    height: 102rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seek .section {
+    width: 214rpx;
+    height: 57rpx;
+    border: 1rpx solid #d6d6d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20rpx;
+    margin-right: 50rpx;
+    position: relative;
+}
+
+.seek .section:first-child::after {
+    content: "";
+    position: absolute;
+    width: 11rpx;
+    height: 2rpx;
+    right: -30rpx;
+    background: #484848;
+}
+
+.seek .picker {
+    display: inline-block;
+}
+
+.seek .calendar {
+    width: 23rpx;
+    height: 24rpx;
+    display: inline-block;
+    margin-left: 20rpx;
+    vertical-align: middle;
+}
+
+.seek .seek-right {
+    width: 120rpx;
+    height: 48rpx;
+}
+
+.seek .seek-right .seek-text {
+    background: #99cc33 !important;
+    width: 120rpx;
+    height: 48rpx;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bolting {
+    border-top: 1rpx solid #cccccc;
+    padding: 0 28rpx;
+    height: 90rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.bolting .bolting-item {
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 26rpx;
+
+}

@@ -1,0 +1,70 @@
+<view class="container person-sky">
+
+     <view class=" nav-sky clearfix">
+          <view class="sky-left fl">
+               <view class="img1-box">
+                    <image class="img1" src="../images/logo_03.png"> </image>
+               </view>
+               <view class="img2-box">
+                    <image class="img2" src="../images/logtext_03.png"> </image>
+               </view>
+          </view>
+          <view class="sky-right fr">
+
+               <view class="sky-text">
+                    <image class="sky-img" src="../images/tel_03.png"> </image>
+                    0575-85097878
+               </view>
+          </view>
+
+     </view>
+
+     <view class="personal clearfix">
+          <view class="sonal-left fl">
+               <image class="" src="../images/via_06.png"></image>
+          </view>
+          <view class="sonal-right fl">
+               <text class="title"> 阿力食品 </text>
+               <text class="info"> 微信号：llisnfp15715</text>
+
+          </view>
+     </view>
+
+     <view class="personal-form">
+
+          <view class="sonalf-item">
+               <button  type="primary" class="disabl" value=" " placeholder="" disabled>解除绑定</button> 
+          </view>
+          <view class="sonalf-item ">
+               <button  type="primary" value=""  placeholder="">上传营业执照</button>
+          </view>
+          <view class="sonalf-item">
+               <button type="primary" value="" placeholder="">上传行检报告</button>
+          </view>
+
+     </view>
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+<view class="" hover-class="none" hover-stop-propagation="false">
+     <navigator class="" target="" url="/pages/index/index" hover-class="navigator-hover" open-type="navigate">
+          跳转到index 页面
+     </navigator>
+
+</view>

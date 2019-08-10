@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+      "i-button": "/components/button/index"
+      },
+    "navigationBarTitleText": "变更提醒"
+} 

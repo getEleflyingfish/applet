@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "i-button": "/components/button/index",
+    "i-radio": "/components/radio/index",
+    "i-checkbox": "/components/checkbox/index",
+    "i-checkbox-group": "/components/checkbox-group/index"
+
+  },
+  "navigationBarTitleText": "绑定微信号"
+}
+
