@@ -1,86 +1,84 @@
 <view class="container person-sky" hover-class="none" hover-stop-propagation="false">
-    <view class=" nav-sky clearfix">
-        <view class="sky-left fl">
-            <view class="img1-box">
-                <image class="img1" src="../images/logo_03.png"> </image>
-            </view>
-            <view class="img2-box">
-                <image class="img2" src="../images/logtext_03.png"> </image>
-            </view>
-        </view>
-        <view class="sky-right fr">
-
-            <view class="sky-text">
-                <image class="sky-img" src="../images/tel_03.png"> </image>
-                0575-85097878
-            </view>
-        </view>
+  <view class=" nav-sky clearfix">
+    <view class="sky-left fl">
+      <view class="img1-box">
+        <image class="img1" src="../images/logo_03.png"> </image>
+      </view>
+      <view class="img2-box">
+        <image class="img2" src="../images/logtext_03.png"> </image>
+      </view>
     </view>
+    <view class="sky-right fr">
 
-    <view class="supply" hover-class="none" hover-stop-propagation="false">
-        <view class="tab-text-change {{ currentTab==1?'show':'hidden' }}">
-            <scroll-view>
-                <view class="remind-item on">
-                    <text class=""> 序号：12346 </text>
-                    <text class=""> 供货单编号：13484149765</text>
-                    <text class=""> 供货单编号：{{ }} </text>
-                    <view class="affirm down" bindtap="tapDownload" left="{{left}}"> 下载供货单</view>
-
-                    <view class="affirm"> 知道了</view>
-                    <view class="icon-img">
-                        <image class="" src="../images/icon-r_35.png" mode="aspectFit" lazy-load="false" binderror=""
-                            bindload=""> </image>
-                    </view>
-                </view>
-                <view class="hidden-remind">
-                    <view class="title clearfix">
-                        <view class="title-item fl"> 条目 </view>
-                        <view class="title-item fl"> 分类 </view>
-                        <view class="title-item fl"> 商品名</view>
-                        <view class="title-item fl"> 规格 </view>
-                        <view class="title-item fl"> 单位 </view>
-                        <view class="title-item fl"> 数量 </view>
-
-                    </view>
-                    <view class="hid-text clearfix">
-                        <view class="hid-item fl"> 1 </view>
-                        <view class="hid-item fl"> 蔬菜 </view>
-                        <view class="hid-item fl"> 土豆</view>
-                        <view class="hid-item fl"> 散装 </view>
-                        <view class="hid-item fl"> 斤 </view>
-                        <view class="hid-item fl"> 50 </view>
-
-                    </view>
-
-                </view>
-                <view class="remind-item">
-                    <text class=""> 序号：12346 </text>
-                    <text class=""> 供货单编号：13484149765</text>
-                    <text class=""> 供货单编号：{{ }} </text>
-                    <text class=""> 供货单编号：{{ }} </text>
-                    <view class="affirm"> 已确认</view>
-                    <view class="icon-img">
-                        <image class="" src="../images/icon-r_35.png" mode="aspectFit" lazy-load="false" binderror=""
-                            bindload="">
-
-                        </image>
-                    </view>
-
-                </view>
-            </scroll-view>
-        </view>
+      <view class="sky-text">
+        <image class="sky-img" src="../images/tel_03.png"> </image>
+        0575-85097878
+      </view>
     </view>
+  </view>
 
-    <view class="masked">
-        <view class="maskeding">
-            <view class="title-tips">
-                提示消息
-                <image class="cancel_05" src="../images/cancel_05.png"> </image>
-            </view>
+  <view class="supply" hover-class="none" hover-stop-propagation="false">
+    <view class="tab-text-change {{ currentTab==1?'show':'hidden' }}">
+      <scroll-view>
+        <view class="remind-item on">
+          <text class=""> 序号：12346 </text>
+          <text class=""> 供货单编号：13484149765</text>
+          <text class=""> 供货单编号：{{ }} </text>
+          <view class="affirm down" bindtap="tapDownload"> 下载供货单</view>
 
-            <text class="mask-text">
+          <view class="affirm"> 知道了</view>
+          <view class="icon-img">
+            <image class="" src="../images/icon-r_35.png" mode="aspectFit"> </image>
+          </view>
+        </view>
+        <view class="hidden-remind">
+          <view class="title clearfix">
+            <view class="title-item fl"> 条目 </view>
+            <view class="title-item fl"> 分类 </view>
+            <view class="title-item fl"> 商品名</view>
+            <view class="title-item fl"> 规格 </view>
+            <view class="title-item fl"> 单位 </view>
+            <view class="title-item fl"> 数量 </view>
+
+          </view>
+          <view class="hid-text clearfix">
+            <view class="hid-item fl"> 1 </view>
+            <view class="hid-item fl"> 蔬菜 </view>
+            <view class="hid-item fl"> 土豆</view>
+            <view class="hid-item fl"> 散装 </view>
+            <view class="hid-item fl"> 斤 </view>
+            <view class="hid-item fl"> 50 </view>
+
+          </view>
+
+        </view>
+        <view class="remind-item">
+          <text class=""> 序号：12346 </text>
+          <text class=""> 供货单编号：13484149765</text>
+          <text class=""> 供货单编号：{{ }} </text>
+          <text class=""> 供货单编号：{{ }} </text>
+          <view class="affirm"> 已确认</view>
+          <view class="icon-img">
+            <image class="" src="../images/icon-r_35.png" mode="aspectFit" lazy-load="false" binderror="" bindload="">
+
+            </image>
+          </view>
+
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class="masked" hidden="{{hidden}}">
+    <view class="maskeding">
+      <view class="title-tips">
+        提示消息
+        <image class="cancel_05" bindtap="tapDownload"  src="../images/cancel_05.png"> </image>
+      </view>
+
+      <text class="mask-text">
                 供货单已保存到本地相册
             </text>
-        </view>
     </view>
+  </view>
 </view>
