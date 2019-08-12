@@ -1,11 +1,13 @@
 {
   "pages":[
+    "pages/balance/balance",
+    "pages/remind/remind",
     "pages/supply/supply",
     "pages/index/index",
     "pages/binding/binding",
-    "pages/balance/balance",
+   
   
-    "pages/remind/remind",
+
     "pages/person/person",
     "pages/logs/logs"
 

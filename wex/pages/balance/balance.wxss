@@ -12,7 +12,7 @@
 }
 
 .tab-text-change text {
-    display: block;
+    /*  display: block; */
     color: #666666;
     font-size: 28rpx;
     line-height: 60rpx;
@@ -47,6 +47,8 @@
 
 .hidden-remind {
     background: #f7f7f7;
+ 
+
 }
 
 .title {
