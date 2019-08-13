@@ -48,47 +48,60 @@
         <view class="bolting-item"> 未结算(100)</view>
     </view>
     <view class="tab-text-change w750">
-          <!-- remind-item  ==列表 -->
-        <view class="remind-item on " bindtap = "listClick">
-            <view wx:for='{{indentArr}}' wx:key="key">
-                <text class="special1 " wx:for='{{item}}' wx:key="item"> {{ item}} </text>
-
+        <!-- remind-item  ==列表 -->
+        <view data-num="1" class="remind-item {{_num==1?'on':''}}" bindtap="menuClick">
+            <view class="list-title-item">
+                <view wx:for='{{indentArr}}' wx:key="key">
+                    <text class="special1 " wx:for='{{item}}' wx:key="item"> {{ item}} </text>
+                </view>
+                <view class="affirm"> {{finished}}</view>
+                <!-- 图标切换  -->
+                <view class='icon-img' wx:key="this" bindtap="chooseImg">
+                    <image class="box-image" src="{{imgUrl}}"></image>
+                </view>
             </view>
-            <!--             <view class="affirm down"> 下载供货单</view> -->
-            <view class="affirm"> 申请结算</view>
-            <view class="icon-img">
-                <image class="" src="../images/icon-r_35.png" mode="aspectFit" lazy-load="false" binderror=""
-                    bindload=""> </image>
-            </view>
-        </view>
-        <view class="hidden-remind">
-
-
-            <view class="title clearfix">
-                <view class="title-item fl" wx:for='{{kindArr}}' wx:key="title"> {{ item.title}} </view>
-
-            </view>
-            <view class="hid-text clearfix" wx:for='{{attrs}}' wx:key="title" wx:for-item="linem">
-                <view class="hid-item fl" wx:for='{{linem}}' wx:for-index='key'> {{ linem[key]}}</view>
-            </view>
-        </view> 
-
-          <!-- remind-item  ==列表 -->
-        <view class="remind-item " bindtap = "listClick">
-
-            <view wx:for='{{indentArr}}' wx:key="key">
-                <text class="special1 " wx:for='{{item}}' wx:key="item"> {{ item}} </text>
-
-            </view>
-            <!--             <view class="affirm down"> 下载供货单</view> -->
-            <view class="affirm"> 已结算</view>
-            <view class="icon-img">
-                <image class="" src="../images/icon-r_35.png" mode="aspectFit" lazy-load="false" binderror=""
-                    bindload=""> </image>
+            <!-- 表格 -->
+            <view data-sheet="1" class="hidden-remind {{_sheet==1?'tables':''}}">
+                <view class="title clearfix">
+                    <view class="title-item fl" wx:for='{{kindArr}}' wx:key="title"> {{ item.title}} </view>
+                </view>
+                <view class="hid-text clearfix" wx:for='{{attrs}}' wx:for-item="linem" wx:key="linem">
+                    <view class="hid-item fl" wx:for='{{linem}}' wx:for-index='key'> {{ linem[key]}}</view>
+                </view>
             </view>
         </view>
+
+        <!--  -->
+        <!-- remind-item  ==列表 -->
+        <view data-num="2" class="remind-item {{_num==2?'on':''}}" bindtap="menuClick">
+            <view class="list-title-item">
+                <view wx:for='{{indentArr}}' wx:key="key">
+                    <text class="special1 " wx:for='{{item}}' wx:key="item"> {{ item}} </text>
+                </view>
+                <view class="affirm"> {{finished}}</view>
+                <!-- 图标切换  -->
+                <view class='icon-img' wx:key="this" bindtap="chooseImg">
+                    <image class="box-image" src="{{imgUrl}}"></image>
+                    <text class="test1">{{curIdx}}</text>
+                </view>
+            </view>
+            <!-- 表格 -->
+            <view data-sheet="2" class="hidden-remind {{_sheet==2?'tables':''}}">
+                <view class="title clearfix">
+                    <view class="title-item fl" wx:for='{{kindArr}}' wx:key="title"> {{ item.title}} </view>
+                </view>
+                <view class="hid-text clearfix" wx:for='{{attrs}}' wx:for-item="linem" wx:key="linem">
+                    <view class="hid-item fl" wx:for='{{linem}}' wx:for-index='key'> {{ linem[key]}}</view>
+                </view>
+            </view>
+        </view>
+
     </view>
 
 
 
+
+
 </view>
+
+<navigator url="../remind/remind"> 去 下一页</navigator>

@@ -93,12 +93,12 @@ Page({
         "practical": "23",
       }
     ],
-    imgchang:[
-      { 
-        init:'../images/icon-r_35.png',
-        cur:'../images/icon-t_42.png'
-      }
-    ]
+
+
+
+    imgUrl: '../images/icon-r_35.png',
+    finished: '已结算',
+    putInBalance: '申请结算'
 
   },
 
@@ -107,9 +107,41 @@ Page({
     this.setData({
       date: e.detail.value
     })
-  }, 
-  listClick: function(){ 
-    console.log( "11111111")
+  },
+  /*图标切换  */
+  chooseImg: function (e) {
+    console.log("-------d：" + this.data.imgUrl);
+    if (this.data.imgUrl === "../images/icon-r_35.png") {
+      this.setData({
+        imgUrl: '../images/icon-t_42.png',
+        finished: '申请结算',
+        _sheet: !e.currentTarget.dataset.sheet
+
+      })
+    } else {
+      this.setData({
+        imgUrl: '../images/icon-r_35.png',
+        finished: '已结算',
+        _sheet: ""
+      })
+    }
+  },
+  /* 列表加背景颜色 */
+  menuClick: function (e) {
+    if (this.data.imgUrl === "../images/icon-t_42.png" || this.data.imgUrl === "../images/icon-r_35.png") {
+      this.setData({
+        _num: e.currentTarget.dataset.num,
+
+      })
+    } else {
+      this.setData({
+        _num: !e.currentTarget.dataset.num,
+
+      })
+    }
   }
+
+
+
 
 })

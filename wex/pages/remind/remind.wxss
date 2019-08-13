@@ -43,13 +43,17 @@
 .remind-item {
     background: #fff;
     margin-top: 20rpx;
+    position: relative;
+}
+
+.list-title-item {
     padding: 18rpx 28rpx 20rpx;
     box-sizing: border-box;
     position: relative;
 }
 
 .tab-text-change text {
-    display: block;
+
     color: #666666;
     font-size: 28rpx;
     line-height: 60rpx;
@@ -84,6 +88,7 @@
 
 .hidden-remind {
     background: #f7f7f7;
+    display: none;
 }
 
 .title {
@@ -140,14 +145,20 @@
     flex: 5;
 }
 
-.tab-text-change .on { 
+.tab-text-change .on {
     background: #99cc33;
     color: #fff;
 }
-.tab-text-change .on text { 
+
+.tab-text-change .on text {
     color: #fff;
-} 
-.tab-text-change .on .affirm { 
+}
+
+.tab-text-change .on .affirm {
     background: #ff9700;
     color: #fff;
+}
+
+.tables {
+    display: block !important;
 }

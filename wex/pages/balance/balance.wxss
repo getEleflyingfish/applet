@@ -2,6 +2,10 @@
 .remind-item {
     background: #fff;
     margin-top: 20rpx;
+    position: relative;
+}
+
+.list-title-item {
     padding: 18rpx 28rpx 20rpx;
     box-sizing: border-box;
     position: relative;
@@ -43,12 +47,29 @@
 .icon-img image {
     width: 100%;
     height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.icon-img .test1 {
+    position: fixed;
+    color: red !important;
+    background: #fff;
+    left: 50%;
 }
 
 .hidden-remind {
     background: #f7f7f7;
- 
 
+
+}
+
+.hidden-remind {
+    display: none;
+}
+
+.tables {
+    display: block !important;
 }
 
 .title {

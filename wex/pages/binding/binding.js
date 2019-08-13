@@ -69,7 +69,6 @@ Page({
     } else {
       this.setData({
         type: ''
-
       })
       this.onOff = true;
       console.log("2222")
