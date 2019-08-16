@@ -5,24 +5,12 @@ Page({
         currentTab: 0,
         indentArr: [
             {
-                key: "序号 : ",
-                text: '123548'
-            },
-            {
-                key: "供货单编号 : ",
-                text: '11856532165'
 
-            },
-            {
-                key: "预单提醒 : ",
-                text: '2019-07-11'
-
-            },
-            {
-                key: "序号 : ",
-                text: '2019-07-11'
-
-            },
+                "idx": "123548",
+                "waybill": '11856532165',
+                "sum": '742251',
+                "day": '2019-07-11'
+            }
         ],
         kindArr: [
             {
@@ -120,35 +108,36 @@ Page({
 
     /*图标切换  */
     chooseImg: function (e) {
-        console.log("-------d：" + this.data.imgUrl);
-        if (this.data.imgUrl === "../images/icon-r_35.png") {
+        this.setData({
+            _idx: e.currentTarget.dataset.id,
+        })
+        if (e.currentTarget.dataset.id == 1) {
             this.setData({
                 imgUrl: '../images/icon-t_42.png',
-                finished: '申请结算',
-                _sheet: !e.currentTarget.dataset.sheet
-
+                hiddenName: false
             })
-        } else {
+        } else if (e.currentTarget.dataset.id == 2) {
+            this.setData({
+                imgUrl: '../images/icon-t_42.png',
+                hiddenName: false
+            })
+        }
+        else {
             this.setData({
                 imgUrl: '../images/icon-r_35.png',
-                finished: '已结算',
-                _sheet: ""
+                hiddenName: true
             })
         }
     },
     /* 列表加背景颜色 */
     menuClick: function (e) {
-        if (this.data.imgUrl === "../images/icon-t_42.png" || this.data.imgUrl === "../images/icon-r_35.png") {
-            this.setData({
-                _num: e.currentTarget.dataset.num,
 
-            })
-        } else {
-            this.setData({
-                _num: !e.currentTarget.dataset.num,
+        this.setData({
+            _num: e.currentTarget.dataset.num,
+        })
 
-            })
-        }
-    }
+    },
+
+
 
 })

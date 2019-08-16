@@ -1,0 +1,33 @@
+<view class="container border-lit">
+    <form action="">
+
+        <view class="cel-list-wap">
+            <view class="cel-list">
+                <i-icon i-class=" macom" size="30" type="mobilephone" color="#989898"> </i-icon>
+                <view class="section">
+                    <input class="code" name="userPhone" placeholder="请输入手机号" value="{{phone}}" auto-focus
+                        bindinput="goDetail" />
+                </view>
+
+            </view>
+            <view class="hint-i" hidden="{{hint}}">
+               请输入手机号码
+            </view>
+            <view class="cel-list ">
+                <i-icon i-class=" macom" type="brush" size="30" color="#989898"> </i-icon>
+                <view class="section">
+                    <input placeholder="请输入手机验证码" focus="{{focus}}" />
+                    <view class="btn-area">
+                        <button class="code gain" disabled='{{disabled}}' data-id="2"
+                            bindtap="getVerificationCode">{{time}}</button>
+                    </view>
+                </view>
+            </view>
+
+        </view>
+        <view class="cel-list-wap mt30">
+            <i-button i-class="cel-botton" form-type="submit">绑定</i-button>
+        </view>
+    </form>
+</view>   
+

@@ -43,25 +43,29 @@
     </view>
     <!--  -->
     <view class="bolting w750">
-        <view class="bolting-item"> 全部(200)</view>
-        <view class="bolting-item"> 已结算(100) </view>
-        <view class="bolting-item"> 未结算(100)</view>
+        <view class="bolting-item {{_filt==1?'active':''}}" data-filter="1" bindtap="filterClick"> 全部(200)</view>
+        <view class="bolting-item {{_filt==2?'active':''}} " data-filter="2" bindtap="filterClick"> 已结算(100) </view>
+        <view class="bolting-item {{_filt==3?'active':''}}" data-filter="3" bindtap="filterClick"> 未结算(100)</view>
     </view>
     <view class="tab-text-change w750">
         <!-- remind-item  ==列表 -->
+
         <view data-num="1" class="remind-item {{_num==1?'on':''}}" bindtap="menuClick">
             <view class="list-title-item">
-                <view wx:for='{{indentArr}}' wx:key="key">
-                    <text class="special1 " wx:for='{{item}}' wx:key="item"> {{ item}} </text>
+                <view wx:for='{{indentArr}}'>
+                    <text class="special1 ">序号： {{ item.idx}} </text>
+                    <text class="special1 ">供货单编号： {{ item.waybill}} </text>
+                    <text class="special1 ">总金额： {{ item.sum}} </text>
+                    <text class="special1 ">供货日期： {{ item.day}} </text>
                 </view>
                 <view class="affirm"> {{finished}}</view>
                 <!-- 图标切换  -->
-                <view class='icon-img' wx:key="this" bindtap="chooseImg">
+                <view class='icon-img {{_idx==1?"active":""}}' data-id="1" wx:key="this" bindtap="chooseImg">
                     <image class="box-image" src="{{imgUrl}}"></image>
                 </view>
             </view>
             <!-- 表格 -->
-            <view data-sheet="1" class="hidden-remind {{_sheet==1?'tables':''}}">
+            <view class="hidden-remind ">
                 <view class="title clearfix">
                     <view class="title-item fl" wx:for='{{kindArr}}' wx:key="title"> {{ item.title}} </view>
                 </view>
@@ -71,22 +75,24 @@
             </view>
         </view>
 
+
         <!--  -->
         <!-- remind-item  ==列表 -->
         <view data-num="2" class="remind-item {{_num==2?'on':''}}" bindtap="menuClick">
             <view class="list-title-item">
-                <view wx:for='{{indentArr}}' wx:key="key">
-                    <text class="special1 " wx:for='{{item}}' wx:key="item"> {{ item}} </text>
+                <view wx:for='{{indentArr}}'>
+                    <text class="special1 ">序号： {{ item.idx}} </text>
+                    <text class="special1 ">供货单编号： {{ item.waybill}} </text>
+                    <text class="special1 ">总金额： {{ item.sum}} </text>
+                    <text class="special1 ">供货日期： {{ item.day}} </text>
                 </view>
                 <view class="affirm"> {{finished}}</view>
-                <!-- 图标切换  -->
-                <view class='icon-img' wx:key="this" bindtap="chooseImg">
+                <view class='icon-img {{_idx==2?"active":""}}' data-id="2" wx:key="*this" bindtap="chooseImg">
                     <image class="box-image" src="{{imgUrl}}"></image>
-                    <text class="test1">{{curIdx}}</text>
+
                 </view>
             </view>
-            <!-- 表格 -->
-            <view data-sheet="2" class="hidden-remind {{_sheet==2?'tables':''}}">
+            <view class="hidden-remind ">
                 <view class="title clearfix">
                     <view class="title-item fl" wx:for='{{kindArr}}' wx:key="title"> {{ item.title}} </view>
                 </view>
@@ -103,5 +109,3 @@
 
 
 </view>
-
-<navigator url="../remind/remind"> 去 下一页</navigator>

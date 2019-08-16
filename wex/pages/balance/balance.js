@@ -3,24 +3,13 @@ Page({
     date: '2016-09-01',
     indentArr: [
       {
-        key: "序号 : ",
-        text: '123548'
-      },
-      {
-        key: "供货单编号 : ",
-        text: '11856532165'
 
-      },
-      {
-        key: "预单提醒 : ",
-        text: '2019-07-11'
+        "idx": "123548",
+        "waybill": '11856532165',
+        "sum": '742251',
+        "day": '2019-07-11'
+      }
 
-      },
-      {
-        key: "序号 : ",
-        text: '2019-07-11'
-
-      },
     ],
 
     kindArr: [
@@ -40,13 +29,13 @@ Page({
         title: "单位",
       },
       {
-        title: "原数量",
-      },
-      {
-        title: "变更数量",
-      },
-      {
         title: "实际数量",
+      },
+      {
+        title: "单价",
+      },
+      {
+        title: "小计",
       }
     ]
     ,
@@ -58,19 +47,19 @@ Page({
         "commodity": "土豆",
         "specification": "散装",
         "unit": "斤",
-        "count": "50",
-        "alteration": "+5",
-        "practical": "26",
+        "count": "20",
+        "alteration": "2.00",
+        "practical": "400.00",
       },
       {
         "id": "2",
         "classify": "蔬菜",
-        "commodity": "黄瓜",
+        "commodity": "黄豆",
         "specification": "散装",
         "unit": "斤",
-        "count": "50",
-        "alteration": "+5",
-        "practical": "20",
+        "count": "20",
+        "alteration": "2.00",
+        "practical": "400.00"
       },
       {
         "id": "3",
@@ -78,9 +67,9 @@ Page({
         "commodity": "西红柿",
         "specification": "散装",
         "unit": "斤",
-        "count": "50",
-        "alteration": "+5",
-        "practical": "21",
+        "count": "20",
+        "alteration": "2.00",
+        "practical": "400.00"
       },
       {
         "id": "4",
@@ -88,17 +77,20 @@ Page({
         "commodity": "白菜",
         "specification": "散装",
         "unit": "斤",
-        "count": "50",
-        "alteration": "+5",
-        "practical": "23",
+        "count": "20",
+        "alteration": "2.00",
+        "practical": "2800.00"
       }
     ],
 
 
 
+
     imgUrl: '../images/icon-r_35.png',
     finished: '已结算',
-    putInBalance: '申请结算'
+    putInBalance: '申请结算',
+    imgkey: 0,
+
 
   },
 
@@ -110,36 +102,42 @@ Page({
   },
   /*图标切换  */
   chooseImg: function (e) {
-    console.log("-------d：" + this.data.imgUrl);
-    if (this.data.imgUrl === "../images/icon-r_35.png") {
+    this.setData({
+      _idx: e.currentTarget.dataset.id,
+    })
+    if (e.currentTarget.dataset.id == 1) {
       this.setData({
         imgUrl: '../images/icon-t_42.png',
-        finished: '申请结算',
-        _sheet: !e.currentTarget.dataset.sheet
-
+        hiddenName: false
       })
-    } else {
+    } else if (e.currentTarget.dataset.id == 2) {
+      this.setData({
+        imgUrl: '../images/icon-t_42.png',
+        hiddenName:false
+      })
+    }
+    else {
       this.setData({
         imgUrl: '../images/icon-r_35.png',
-        finished: '已结算',
-        _sheet: ""
-      })
+        hiddenName: true
+      }) 
     }
   },
   /* 列表加背景颜色 */
   menuClick: function (e) {
-    if (this.data.imgUrl === "../images/icon-t_42.png" || this.data.imgUrl === "../images/icon-r_35.png") {
-      this.setData({
-        _num: e.currentTarget.dataset.num,
 
-      })
-    } else {
-      this.setData({
-        _num: !e.currentTarget.dataset.num,
+    this.setData({
+      _num: e.currentTarget.dataset.num,
+    })
 
-      })
-    }
+  },
+  filterClick:function(e){ 
+     this.setData({ 
+      _filt:e.currentTarget.dataset.filter
+     })
   }
+
+
 
 
 

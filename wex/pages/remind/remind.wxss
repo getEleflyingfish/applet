@@ -91,6 +91,18 @@
     display: none;
 }
 
+.tab-text-change .on .hidden-remind {
+    display: block;
+}
+
+.tab-text-change .hidden-remind {
+    display: none;
+}
+.tab-text-change text.special1 {
+    display: block;
+}
+
+
 .title {
     display: flex;
     /*   justify-conten: space-between; */

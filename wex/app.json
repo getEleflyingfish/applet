@@ -1,18 +1,16 @@
 {
   "pages":[
-    "pages/balance/balance",
-    "pages/remind/remind",
-    "pages/supply/supply",
     "pages/index/index",
-    "pages/binding/binding",
+    "pages/balance/balance",
+    "pages/supply/supply",
+    "pages/remind/remind",
    
-  
-
+    "pages/bindCel/bindCel",
+    
+   
+    "pages/binding/binding",
     "pages/person/person",
     "pages/logs/logs"
-
-
-
   ],
   "window":{
     "backgroundTextStyle":"light",

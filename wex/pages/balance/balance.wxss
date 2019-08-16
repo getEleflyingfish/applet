@@ -15,11 +15,19 @@
     background: #ececec;
 }
 
+.tab-text-change on .hidden-remind {
+    display: block !important;
+}
+
 .tab-text-change text {
     /*  display: block; */
     color: #666666;
     font-size: 28rpx;
     line-height: 60rpx;
+}
+
+.tab-text-change text.special1 {
+    display: block;
 }
 
 .affirm {
@@ -63,13 +71,15 @@
 
 
 }
-
-.hidden-remind {
+.tab-text-change .on .hidden-remind {
+    display: block;
+}
+.tab-text-change .hidden-remind {
     display: none;
 }
 
 .tables {
-    display: block !important;
+    display: none !important;
 }
 
 .title {
@@ -225,6 +235,9 @@
 .bolting .bolting-item {
     -webkit-flex: 1;
     flex: 1;
-    font-size: 26rpx;
-
+    font-size: 28rpx;
+ 
+} 
+.bolting .active { 
+    color: #b8da7b;
 }

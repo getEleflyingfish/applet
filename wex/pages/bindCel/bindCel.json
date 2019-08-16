@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "i-input": "/components/input/index",
+        "i-icon": "/components/icon/index",
+        "i-button": "/components/button/index"
+    },
+    "navigationBarTitleText": "绑定手机"
+}
